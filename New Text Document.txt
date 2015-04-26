@@ -1,0 +1,1 @@
+echo "Enter two Primes as p and q for RSA"

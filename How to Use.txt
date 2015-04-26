@@ -1,0 +1,24 @@
+
+Before usign this App, connect all nodes to an Adhoc network and set static Ip in 
+NetworkAndSharingCenter > changeAdapterSettings > wirelessNetworkConnectionProperties > IP4Settings> usethefollowingIpAddresses > Enter IP addresses > Ok > ...
+
+
+1. Execute 1_install
+   This batch takes care of compatibility issues in different machines
+
+2. Execute 2_rsa 
+   Enter two sufficiently large primes <= 10000 and generate public and private keys for RSA algo.  
+   public key consist of two numbers (p,n). Both will be shown on cmd and stored in separate files.
+
+
+3. Execute 3_StartApp
+   This will start the app.
+   Enter Destinations name, Enter text you want to send, 
+   enter recievers public key (p,n) (These two details are shown in the recievers cmd after starting Mainserver) 
+   You also need to click on the name of the next node you want to send your data to.This will force the app to send 
+   data to the intermediate node instead of sending to the final destination directly.You need to define the route like this 
+   at all nodes in the route.
+
+4. Execute 4_Startserver
+   This will initaite request server.start it at all nodes.(Not required in source node though).      	
+
